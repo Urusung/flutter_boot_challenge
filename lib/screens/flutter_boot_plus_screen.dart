@@ -62,7 +62,6 @@ class FlutterBootPlusScreen extends StatelessWidget {
                   ),
                 ),
               ),
-              const Spacer(),
               const Text(
                 'Restore subscription',
                 textAlign: TextAlign.center,
