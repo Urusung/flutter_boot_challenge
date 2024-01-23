@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_boot_challenge/screens/flutter_boot_plus_screen.dart';
 import 'package:flutter_boot_challenge/screens/my_cute_gpt_screen.dart';
+import 'package:flutter_boot_challenge/screens/my_high_score_screen.dart';
 import 'package:flutter_boot_challenge/screens/select_screen.dart';
 
 void main() {
@@ -10,7 +11,7 @@ void main() {
   runApp(
     const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MyCuteGPTScreen(),
+      home: MyHighScoreScreen(),
     ),
   );
 }
