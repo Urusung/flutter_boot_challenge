@@ -19,26 +19,36 @@ class _MySlackAvatorScreenState extends State<MySlackAvatorScreen> {
         children: [
           Padding(
             padding: const EdgeInsets.only(top: 32, bottom: 32),
-            child: Stack(
-              children: [
-                Container(
-                  height: 200,
-                  width: 200,
-                  decoration: BoxDecoration(
-                    color: Colors.blue[900],
-                    borderRadius: BorderRadius.circular(12),
+            child: Container(
+              height: 200,
+              width: 200,
+              decoration: BoxDecoration(
+                color: Colors.blue[900],
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: Column(
+                children: [
+                  const SizedBox(
+                    height: 20,
                   ),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: [
-                      Container(
+                  Expanded(
+                    flex: 2,
+                    child: Align(
+                      alignment: Alignment.center,
+                      child: Container(
                         width: 100,
                         height: 60 + sliderValue1,
                         alignment: Alignment.center,
                         decoration: const BoxDecoration(
                             color: Colors.white, shape: BoxShape.circle),
                       ),
-                      Container(
+                    ),
+                  ),
+                  Expanded(
+                    flex: 1,
+                    child: Align(
+                      alignment: Alignment.bottomCenter,
+                      child: Container(
                         width: 170 + sliderValue2 / 3,
                         height: 50 + sliderValue2 / 10,
                         decoration: const BoxDecoration(
@@ -48,10 +58,10 @@ class _MySlackAvatorScreenState extends State<MySlackAvatorScreen> {
                           ),
                         ),
                       ),
-                    ],
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
           Slider(
