@@ -60,7 +60,6 @@ class _MyCuteGPTScreenState extends State<MyCuteGPTScreen> {
           Icons.subject,
           color: Colors.black,
         ),
-        automaticallyImplyLeading: false,
         backgroundColor: const Color.fromARGB(255, 255, 251, 255),
       ),
       body: SafeArea(

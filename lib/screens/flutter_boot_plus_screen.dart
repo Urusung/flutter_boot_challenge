@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class FlutterBootPlusScreen extends StatelessWidget {
@@ -8,7 +7,6 @@ class FlutterBootPlusScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        automaticallyImplyLeading: false,
         backgroundColor: const Color.fromARGB(255, 255, 251, 255),
       ),
       body: SafeArea(
